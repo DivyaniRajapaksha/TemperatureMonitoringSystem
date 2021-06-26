@@ -6,10 +6,13 @@ const Signup = () => {
   return (
     <div>
       <Container>
-        <div className="text-center" style={{ padding: "30px" }}>
-          <h1>Signup</h1>
+        <div
+          className="text-center"
+          style={{ padding: "30px", backgroundColor: "#333" }}
+        >
+          <h1 style={{ color: "#fff" }}>Signup</h1>
         </div>
-        <Row>
+        <Row style={{ marginTop: "30px" }}>
           <Col>
             <Image src={logo} thumbnail />
           </Col>
@@ -35,13 +38,13 @@ const Signup = () => {
               </Form.Group>
               <Form.Group>
                 <Form.Label>Password</Form.Label>
-                <Form.Control type="password" placeholder="Password" />
+                <Form.Control type="password" placeholder="Enter Password" />
               </Form.Group>
               <Form.Group>
                 <Form.Label>Re-Enter Password</Form.Label>
                 <Form.Control type="password" placeholder="Re-Enter Password" />
               </Form.Group>
-              <Button variant="primary" type="submit" className="w-100">
+              <Button size="lg" variant="dark" type="submit" className="w-100">
                 Submit
               </Button>
             </Form>
