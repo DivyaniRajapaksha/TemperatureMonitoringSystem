@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../ProfileCircle/ProfileCircle.css";
-import pic5 from "../../img/Profilecircle/ico.png";
+// import pic5 from "../../img/Profilecircle/ico.png";
 import pro1 from "../../img/pro1.jpg";
 import { Nav, form, Image, Col, Row, Button } from "react-bootstrap";
 
