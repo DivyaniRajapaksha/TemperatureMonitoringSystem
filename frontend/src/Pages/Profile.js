@@ -56,126 +56,87 @@ export class Profile extends Component {
       >
         <img
           src={bg2}
-          style={{ width: "97.2%", height: "20%", position: "absolute" }}
+          style={{ width: "97.2%", height: "25%", position: "absolute" }}
         ></img>
         {/* {this.state.values.length > 0 &&
           this.state.values.map((item) => { */}
-            return (
-              <div
-                class="coloumn container-lg  shadow p-3 mb-5"
-                style={{ backgroundColor: "white" }}
-              >
-                <div class="row">
-                  <p
-                    class=" w-100 p-3 text-white"
-                    style={{ textAlign: "center", position: "absolute" }}
-                  ></p>
-                </div>
-                <div class="row">
-                  <br></br>
-                  <br></br>
-                  <br></br>
-                </div>
-                <div class="row">
-                  <div
-                    class="container-sm  shadow p-3 mb-5 bg-body rounded bg-light text-dark "
-                    style={{
-                      marginTop: "30px",
-                      width: "530px",
-                      marginTop: "100PX",
-                    }}
-                  ></div>
-                </div>
-                <div class="row">
-                  <div class="mx-auto" style={{ width: "370px" }}>
-                    <Profilepic />
-                  </div>
-                </div>
-                <h1 className="text-center" style={{ marginTop: "-35px" }}>
-                  {/* {item.name} */}
-                </h1>
-                {/* <h5 className="text-center text-muted">{item.email}</h5> */}
-                <div className="text-center my-3">
-                  <Link to="edit-profile">
-                    <Box display="flex" justifyContent="center">
-                      <Button variant="contained">Edit Profile</Button>
-                    </Box>
-                  </Link>
-                </div>
-                <div className="text-center my-3">
-                  <Box display="flex" justifyContent="center">
-                    <Button variant="contained">Delete Profile</Button>
-                  </Box>
-                </div>
-                <br></br>
+        return (
+        <div
+          class="coloumn container-lg  shadow p-3 mb-5"
+          style={{ backgroundColor: "white" }}
+        >
+          <div class="row">
+            <p
+              class=" w-100 p-3 text-white"
+              style={{ textAlign: "center", position: "absolute" }}
+            ></p>
+          </div>
+          <div class="row">
+            <br></br>
+            <br></br>
+            <br></br>
+          </div>
 
-                <div class="row">
-                  <div class="mx-auto" style={{ width: "80px" }}>
-                    <img
-                      src={bio}
-                      class="rounded-circle "
-                      alt="..."
-                      style={{
-                        width: "50px",
-                        height: "50px",
-                        marginLeft: "ml-6",
-                        marginTop: "10px",
-                        position: "absolute",
-                      }}
-                    ></img>
-                  </div>
-                </div>
+          <div class="row">
+            <div class="mx-auto" style={{ width: "370px" }}>
+              <Profilepic />
+            </div>
+          </div>
+          <h1 className="text-center" style={{ marginTop: "-35px" }}>
+            {/* {item.name} */}
+          </h1>
+          {/* <h5 className="text-center text-muted">{item.email}</h5> */}
+          <div className="text-center my-3">
+            <Link to="edit-profile">
+              <Box display="flex" justifyContent="center">
+                <Button variant="contained">Edit Profile</Button>
+              </Box>
+            </Link>
+          </div>
+          <div className="text-center my-3">
+            <Box display="flex" justifyContent="center">
+              <Button variant="contained">Delete Profile</Button>
+            </Box>
+          </div>
+          <br></br>
 
-                <div class="row">
-                  <div
-                    class="container shadow-sm p-3 mb-3 bg-body rounded bg-light text-dark"
-                    style={{ width: "600px", marginTop: "35PX" }}
-                  >
-                    <br></br>
-                    {/* {item.description} */}
-                  </div>
-                  <div>,</div>
-                </div>
-                <div className="text-center my-3">
-                  <Link to="my-projects">
-                    <Box display="flex" justifyContent="center">
-                      <Button variant="contained">My Projects</Button>
-                    </Box>
-                  </Link>
-                </div>
-                <div className="text-center my-3">
-                  <Link to="new-project">
-                    <Box display="flex" justifyContent="center">
-                      <Button variant="contained">Create New Projects</Button>
-                    </Box>
-                  </Link>
-                </div>
-                <div className="row text-center">
-                  <div
-                    className="container shadow-sm p-3 mb-5 bg-body rounded bg-light text-dark"
-                    style={{ width: "600px", marginTop: "5PX" }}
-                  >
-                    <h3>Skills</h3>
-                    <br></br>
-                    {/* <Chip></Chip> */}
-                  </div>
-                </div>
+          <div class="row">
+            <div class="mx-auto" style={{ width: "80px" }}>
+              <img
+                src={bio}
+                class="rounded-circle "
+                alt="..."
+                style={{
+                  width: "50px",
+                  height: "50px",
+                  marginLeft: "ml-6",
+                  marginTop: "10px",
+                  position: "absolute",
+                }}
+              ></img>
+            </div>
+          </div>
 
-                <div className="row">
-                  <div
-                    className="container shadow-sm p-3 mb-5 bg-body rounded bg-light text-dark"
-                    style={{ width: "1000px", marginTop: "5PX" }}
-                  >
-                    <br></br>
-                    <h4 className="text-center">Feedbacks & Ratings</h4>
-                    <br></br>
-                    <div>
-                      {/* <Feedback /> */}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            {/* );
+          <div class="row">
+            <div
+              class="container shadow-sm p-3 mb-3 bg-body rounded bg-light text-dark"
+              style={{ width: "600px", marginTop: "35PX" }}
+            >
+              {" "}
+              <p style={{ marginTop: "10px" }}>
+                Voluptatibus aut totam voluptas eos numquam neque ea. Sed libero
+                qui est ut amet nisi. Praesentium repellendus dolorem labore
+                debitis consequatur nostrum quae pariatur mollitia. Minima ea
+                quibusdam porro necessitatibus recusandae voluptatem dolor.
+                Officiis nesciunt iusto ea provident et tempora nemo itaque qui.
+              </p>
+              <br></br>
+              {/* {item.description} */}
+            </div>
+            <div>,</div>
+          </div>
+        </div>
+        {/* );
           })} */}
       </div>
     );
