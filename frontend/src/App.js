@@ -9,15 +9,13 @@ import Profile from "./Pages/Profile";
 function App() {
   return (
     <Router>
-       <Profile />
-      {/* <div className="container">
-       
+      <div className="container">
         <br />
         <Route path="/" exact component={Login} />
         <Route path="/signup" component={Signup} />
         <Route path="/profile" component={Profile} />
         <Route path="/chart" component={Chart} />
-      </div> */}
+      </div>
     </Router>
   );
 }
