@@ -3,51 +3,14 @@ import pic5 from "../img/back.jpg";
 import bg2 from "../img/bg2.jpg";
 import { Box, Grid, Paper, Typography, Button } from "@material-ui/core";
 import Rating from "@material-ui/lab/Rating";
-// import Feedback from "../components/Feedback/Feedback";
 import { Nav, form, Image, Col, Row, Container, Card } from "react-bootstrap";
 import bio from "../img/bio.png";
-import { alignPropType } from "react-bootstrap/esm/DropdownMenu";
-import Profilepic from "../components/ProfileCircle/ProfileCircle";
-// import Chip from "../components/Chip/Chip";
+import Profilepic from "../Components/ProfileCircle/ProfileCircle";
 import PropTypes from "prop-types";
-// import constants from "../constants/constants";
-// import Axios from "axios";
 import { Link } from "react-router-dom";
 
 export class Profile extends Component {
-  //   static propTypes = {
-  //     match: PropTypes.object.isRequired,
-  //     location: PropTypes.object.isRequired,
-  //     history: PropTypes.object.isRequired,
-  //   };
-  //   constructor() {
-  //     super();
-  //     this.state = {
-  //       values: [],
-  //     };
-  //     this.getAccountDeatils = this.getAccountDeatils.bind(this);
-  //   }
 
-  //   componentDidMount() {
-  //     if (localStorage.getItem("auth-token") == "") {
-  //       this.props.history.push("/");
-  //     } else {
-  //       this.getAccountDeatils();
-  //     }
-  //   }
-  //   getAccountDeatils() {
-  //     var userId = localStorage.getItem("auth-id");
-
-  //     Axios.get(constants.backend_url + "/users/get-user/" + userId)
-  //       .then((response) => {
-  //         this.setState({
-  //           values: response.data,
-  //         });
-  //       })
-  //       .catch(function (error) {
-  //         console.log(error);
-  //       });
-  //   }
   render() {
     return (
       <div
@@ -58,8 +21,6 @@ export class Profile extends Component {
           src={bg2}
           style={{ width: "97.2%", height: "25%", position: "absolute" }}
         ></img>
-        {/* {this.state.values.length > 0 &&
-          this.state.values.map((item) => { */}
         return (
         <div
           class="coloumn container-lg  shadow p-3 mb-5"
