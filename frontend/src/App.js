@@ -5,7 +5,7 @@ import Chart from "./Pages/Chart";
 import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
 import Profile from "./Pages/Profile";
-import NavBar from "./Components/Navbar/Navbar";
+import NavBar from "./components/Navbar/Navbar";
 import Home from "./Pages/Home"
 
 function App() {

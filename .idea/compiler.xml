@@ -2,21 +2,24 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="tempmontoring" />
         <module name="temperaturemonitoring" />
+        <module name="TemperatureMonitoringSystem" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="temperaturemonitoring" target="1.8" />
+      <module name="TemperatureMonitoringSystem" target="1.8" />
       <module name="tempmontoring" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="TemperatureMonitoringSystem" options="-parameters" />
       <module name="temperaturemonitoring" options="-parameters" />
       <module name="tempmontoring" options="-parameters" />
     </option>

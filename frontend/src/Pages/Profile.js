@@ -5,7 +5,7 @@ import { Box, Grid, Paper, Typography, Button } from "@material-ui/core";
 import Rating from "@material-ui/lab/Rating";
 import { Nav, form, Image, Col, Row, Container, Card } from "react-bootstrap";
 import bio from "../img/bio.png";
-import Profilepic from "../Components/ProfileCircle/ProfileCircle";
+import Profilepic from "../components/ProfileCircle/ProfileCircle";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 

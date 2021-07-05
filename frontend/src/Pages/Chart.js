@@ -1,5 +1,5 @@
 import React, { Component, useState } from 'react';
-import LineChartContainer from "../Components/Chart/LineChartContainer";
+import LineChartContainer from "../components/Chart/LineChartContainer";
 
 
 const Chart = () => {

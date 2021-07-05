@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/backend/TemperatureMonitoringSystem.iml" filepath="$PROJECT_DIR$/backend/TemperatureMonitoringSystem.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/assignment.iml" filepath="$PROJECT_DIR$/.idea/assignment.iml" />
       <module fileurl="file://$PROJECT_DIR$/temperaturemonitoring/temperaturemonitoring.iml" filepath="$PROJECT_DIR$/temperaturemonitoring/temperaturemonitoring.iml" />
-      <module fileurl="file://$PROJECT_DIR$/backend/tempmontoring.iml" filepath="$PROJECT_DIR$/backend/tempmontoring.iml" />
     </modules>
   </component>
 </project>
