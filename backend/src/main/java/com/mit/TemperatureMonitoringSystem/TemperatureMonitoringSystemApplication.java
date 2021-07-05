@@ -12,5 +12,4 @@ public class TemperatureMonitoringSystemApplication {
 		SpringApplication.run(TemperatureMonitoringSystemApplication.class, args);
 	}
 
-
 }
