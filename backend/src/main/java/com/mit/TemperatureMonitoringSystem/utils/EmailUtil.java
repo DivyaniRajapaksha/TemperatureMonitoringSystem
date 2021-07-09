@@ -1,4 +1,4 @@
-package com.mit.TemperatureMonitoringSystem.Utils;
+package com.mit.TemperatureMonitoringSystem.utils;
 
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;

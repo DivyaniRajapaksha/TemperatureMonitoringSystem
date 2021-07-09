@@ -1,4 +1,4 @@
-package com.mit.TemperatureMonitoringSystem.Utils;
+package com.mit.TemperatureMonitoringSystem.utils;
 
 public class Common_Constants {
 

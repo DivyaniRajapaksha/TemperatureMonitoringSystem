@@ -1,7 +1,15 @@
 import React from "react";
-import { Container, Row, Col, Form, Button, Image } from "react-bootstrap";
+import {
+  Container,
+  Row,
+  Col,
+  Form,
+  Button,
+  Image,
+  Alert,
+} from "react-bootstrap";
 import logo from "../img/logo.jpg";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
@@ -18,6 +26,11 @@ const Login = () => {
             <Image src={logo} thumbnail />
           </Col>
           <Col>
+            {localStorage.getItem("msgSignup") ? (
+              <Alert variant={"success"}>
+                {localStorage.getItem("msgSignup")}
+              </Alert>
+            ) : null}
             <Form>
               <Form.Group>
                 <Form.Label>Email address</Form.Label>
@@ -27,14 +40,18 @@ const Login = () => {
                 <Form.Label>Password</Form.Label>
                 <Form.Control type="password" placeholder="Enter Password" />
               </Form.Group>
-              <Form.Group as={Row} controlId="formHorizontalCheck" style={{marginLeft:"1%"}}>
-                  <Form.Check label="Remember me" />
+              <Form.Group
+                as={Row}
+                controlId="formHorizontalCheck"
+                style={{ marginLeft: "1%" }}
+              >
+                <Form.Check label="Remember me" />
               </Form.Group>
               <Button size="lg" variant="dark" type="submit" className="w-100">
                 Submit
               </Button>
-              <Form.Group style={{marginTop:"5%"}}>
-                <Link to="/Signup">Create an account</Link>               
+              <Form.Group style={{ marginTop: "5%" }}>
+                <Link to="/Signup">Create an account</Link>
               </Form.Group>
             </Form>
           </Col>
