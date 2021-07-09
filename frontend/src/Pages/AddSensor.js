@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from "prop-types";
-
+import constants from "../constants/constants";
+import axios from "axios";
 
 class AddSensor extends Component {
     static propTypes = {
@@ -11,7 +12,7 @@ class AddSensor extends Component {
     constructor() {
         super();
         this.state = {
-            id: "",
+            id: 0,
             name: "",
             location: "",
             error: ""
@@ -19,17 +20,29 @@ class AddSensor extends Component {
         this.handleOnSubmit = this.handleOnSubmit.bind(this);
     }
 
-    handleOnSubmit(e) {
-        if (!this.state.id && !this.state.name && !this.state.location) {
-            this.setState({ error: "Please fill all the fields" })
+    async handleOnSubmit(e) {
+        try {
+            e.preventDefault();
+            if (!this.state.id && !this.state.name && !this.state.location) {
+                this.setState({ error: "Please fill all the fields" })
+            }
+
+            let id = this.state.id;
+            let name = this.state.name;
+            let loc = this.state.location;
+
+            let sensorData = {
+                sensor_id: 1254,
+                location: "vffv",
+                sensorName: "vvfvfv"
+            }
+            console.log("data: " + sensorData)
+            await axios.post("http://localhost:8080/api/sensor/add", sensorData).then((res) => {
+                console.log(res.data)
+            });
+        } catch (err) {
+            this.setState({ error: "Error" })
         }
-        e.preventDefault();
-        let sensorData = {
-            sensor_id: this.state.id,
-            sensorName: this.state.name,
-            location: this.state.location
-        }
-        console.log("data: " + sensorData)
 
     }
 
@@ -38,7 +51,7 @@ class AddSensor extends Component {
         return (
             <div className="App">
                 <div className="App-header mb-5">
-                    <h2>Add Sensor</h2>
+                    <h2 className="text-center">Add Sensor</h2>
                 </div>
                 <div className="mt-5">
                     <form>
@@ -54,7 +67,7 @@ class AddSensor extends Component {
 
                         <div className="form-group">
                             <label htmlFor="exampleInputEmail1">Sensor ID</label>
-                            <input type="text"
+                            <input type="number"
                                 className="form-control"
                                 aria-describedby="emailHelp"
                                 placeholder="Enter Sensor ID"

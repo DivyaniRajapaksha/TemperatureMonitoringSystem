@@ -28,7 +28,7 @@ class SensorDates extends Component {
         return (
             <div className="App">
                 <div className="App-header mb-5">
-                    <h2>Sensor Dates</h2>
+                    <h2 className="text-center">Sensor Dates</h2>
                 </div>
                 <div className="my-5">
                     <div>

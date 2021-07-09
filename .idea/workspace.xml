@@ -19,7 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5c99a2d-ed9e-4146-8712-d5a6115f7e47" name="Default Changelist" comment="" />
+    <list default="true" id="a5c99a2d-ed9e-4146-8712-d5a6115f7e47" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Pages/AddSensor.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Pages/AddSensor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Pages/SensorDates.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Pages/SensorDates.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Pages/Sensors.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Pages/Sensors.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Navbar/Navbar.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,6 +51,12 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -82,7 +94,7 @@
       <workItem from="1625836276532" duration="683000" />
       <workItem from="1625837025709" duration="300000" />
       <workItem from="1625839490622" duration="5327000" />
-      <workItem from="1625850226089" duration="788000" />
+      <workItem from="1625850226089" duration="2061000" />
     </task>
     <servers />
   </component>

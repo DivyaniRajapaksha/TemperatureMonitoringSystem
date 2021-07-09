@@ -28,8 +28,11 @@ class Sensors extends Component {
         return (
             <div className="App">
                 <div className="App-header mb-5">
-                    <h2>All Sensor</h2>
+                    <h2 className="text-center px-4">All Sensor</h2>
                 </div>
+                <Link to="addsensor">
+                    <button type="button" className="btn btn-info">Add Sensor</button>
+                </Link>
                 <div className="my-5">
                     <div>
                         <table className="table table-hover">

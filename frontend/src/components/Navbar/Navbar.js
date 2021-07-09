@@ -7,7 +7,7 @@ const NavBar = () => {
   const signup = () => history.push("/signup");
   const home = () => history.push("/home");
   const profile = () => history.push("/profile");
-  const chart = () => history.push("/chart");
+  const sensors = () => history.push("/sensors");
   const login = () => history.push("/");
 
   return (
@@ -19,7 +19,7 @@ const NavBar = () => {
         </Nav>
         <Nav inline>
           <Nav.Link onClick={home}>Home</Nav.Link>
-          <Nav.Link onClick={chart}>Chart</Nav.Link>
+          <Nav.Link onClick={sensors}>Sensors</Nav.Link>
           <Nav.Link onClick={profile}>Profile</Nav.Link>
           <Nav.Link onClick={login}>Login</Nav.Link>
           <Nav.Link onClick={signup}>Signup</Nav.Link>
