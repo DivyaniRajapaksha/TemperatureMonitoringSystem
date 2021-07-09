@@ -7,6 +7,7 @@ import Signup from "./Pages/Signup";
 import Profile from "./Pages/Profile";
 import NavBar from "./components/Navbar/Navbar";
 import Home from "./Pages/Home"
+import AddSensor from "./Pages/AddSensor";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/signup" component={Signup} />
         <Route path="/profile" component={Profile} />
         <Route path="/chart" component={Chart} />
+        <Route path="/addsensor" component={AddSensor} />
         <Route path="/home" component={Home} />
       </div>
     </Router>

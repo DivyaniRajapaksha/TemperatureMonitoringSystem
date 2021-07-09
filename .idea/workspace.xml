@@ -19,13 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5c99a2d-ed9e-4146-8712-d5a6115f7e47" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/controllers/SensorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/controllers/SensorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/modals/Sensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/modals/Sensor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/repository/SensorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/repository/SensorRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/services/SensorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/services/SensorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/services/impl/SensorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/services/impl/SensorServiceImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="a5c99a2d-ed9e-4146-8712-d5a6115f7e47" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,7 +64,7 @@
       </method>
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -88,7 +82,7 @@
       <workItem from="1625836276532" duration="683000" />
       <workItem from="1625837025709" duration="300000" />
       <workItem from="1625839490622" duration="5327000" />
-      <workItem from="1625850226089" duration="269000" />
+      <workItem from="1625850226089" duration="788000" />
     </task>
     <servers />
   </component>
