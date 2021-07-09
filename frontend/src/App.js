@@ -27,6 +27,9 @@ function App() {
         <Route path="/sensor-dates" component={SensorDates} />
         <Route path="/home" component={Home} />
       </div>
+      <br />
+      <br />
+      <br />
       <Footer />
     </Router>
   );
