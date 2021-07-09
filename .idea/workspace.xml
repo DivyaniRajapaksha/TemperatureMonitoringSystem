@@ -23,26 +23,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a5c99a2d-ed9e-4146-8712-d5a6115f7e47" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Controller/MonitorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Controller/SensorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Modal/Monitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Modal/Sensor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Repository/MonitorRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Repository/SensorRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Utils/Common_Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Utils/EmailUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/services/MonitorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/services/SensorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/services/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/services/impl/MonitorServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/services/impl/SensorServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/services/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_activation_jakarta_activation_1_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_jakarta_mail_1_6_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_mail_2_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_3_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/controllers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/modals/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/TemperatureMonitoringSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/TemperatureMonitoringSystem.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Modal/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Modal/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Controller/MonitorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/controllers/MonitorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Controller/SensorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/controllers/SensorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Modal/Monitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/modals/Monitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Modal/Sensor.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/modals/Sensor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Modal/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Repository/MonitorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/repository/MonitorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Repository/SensorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/repository/SensorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Utils/Common_Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/utils/Common_Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Utils/Cryptography.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/utils/Cryptography.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Utils/EmailUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/utils/EmailUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/services/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/services/impl/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +65,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem" />
@@ -77,6 +79,17 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TemperatureMonitoringSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="TemperatureMonitoringSystem" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.mit.TemperatureMonitoringSystem.TemperatureMonitoringSystemApplication" />
@@ -85,7 +98,7 @@
       </method>
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -117,11 +130,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1625826408165">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1625826408165" />
   </component>
 </project>

@@ -1,4 +1,4 @@
-package com.mit.TemperatureMonitoringSystem.Controller;
+package com.mit.TemperatureMonitoringSystem.controllers;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
