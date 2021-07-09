@@ -30,7 +30,7 @@ function App() {
       <br />
       <br />
       <br />
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   );
 }
