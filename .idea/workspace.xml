@@ -22,27 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5c99a2d-ed9e-4146-8712-d5a6115f7e47" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Controller/MonitorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Controller/SensorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Modal/Monitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Modal/Sensor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Repository/MonitorRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Repository/SensorRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Utils/Common_Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Utils/EmailUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/services/MonitorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/services/SensorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/services/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/services/impl/MonitorServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/services/impl/SensorServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/services/impl/UserServiceImpl.java" afterDir="false" />
+    <list default="true" id="a5c99a2d-ed9e-4146-8712-d5a6115f7e47" name="Default Changelist" comment="Structure added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/TemperatureMonitoringSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/TemperatureMonitoringSystem.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Modal/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Modal/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/Repository/UserRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +51,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\MIT\3.1 Semester\IntegrativeProgramming\Final\TemperatureMonitoringSystem\backend\src\main\java\com\mit\TemperatureMonitoringSystem" />
       <recent name="C:\MIT\3.1 Semester\IntegrativeProgramming\Final\TemperatureMonitoringSystem\backend\src\main\java\com\mit\TemperatureMonitoringSystem\Utils" />
       <recent name="C:\MIT\3.1 Semester\IntegrativeProgramming\Final\TemperatureMonitoringSystem\backend\src\main\java\com\mit\TemperatureMonitoringSystem\Repository" />
       <recent name="C:\MIT\3.1 Semester\IntegrativeProgramming\Final\TemperatureMonitoringSystem\backend\src\main\java\com\mit\TemperatureMonitoringSystem\Controller" />
@@ -99,8 +81,16 @@
       <workItem from="1625567074608" duration="342000" />
       <workItem from="1625567447907" duration="179000" />
       <workItem from="1625636254061" duration="333000" />
-      <workItem from="1625826346610" duration="656000" />
+      <workItem from="1625826346610" duration="821000" />
     </task>
+    <task id="LOCAL-00001" summary="Structure added">
+      <created>1625827064663</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1625827064663</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,10 +108,54 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Structure added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Structure added" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1625826408165">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1625826408165" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1625827173676">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1625827173676" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1625827173676">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1625827173676" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1625827173676">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1625827173676" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1625827173676">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1625827173676" />
+    <state width="1493" height="210" key="GridCell.Tab.1.bottom" timestamp="1625827173676">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1625827173676" />
+    <state width="1493" height="210" key="GridCell.Tab.1.center" timestamp="1625827173676">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1625827173676" />
+    <state width="1493" height="210" key="GridCell.Tab.1.left" timestamp="1625827173676">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1625827173676" />
+    <state width="1493" height="210" key="GridCell.Tab.1.right" timestamp="1625827173676">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1625827173676" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1625827094852">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1625827094852" />
+    <state x="417" y="201" key="git4idea.merge.GitPullDialog" timestamp="1625827079823">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="417" y="201" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1625827079823" />
   </component>
 </project>
