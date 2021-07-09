@@ -24,8 +24,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a5c99a2d-ed9e-4146-8712-d5a6115f7e47" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/services/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/services/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Pages/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Pages/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Pages/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Pages/Profile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Pages/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Pages/Signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Navbar/Navbar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +88,7 @@
       <workItem from="1625826346610" duration="656000" />
       <workItem from="1625836276532" duration="683000" />
       <workItem from="1625837025709" duration="300000" />
-      <workItem from="1625839490622" duration="5327000" />
+      <workItem from="1625839490622" duration="7990000" />
     </task>
     <servers />
   </component>
