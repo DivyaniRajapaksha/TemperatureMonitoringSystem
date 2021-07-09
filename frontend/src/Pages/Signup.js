@@ -65,6 +65,7 @@ const Signup = (props) => {
 
   return (
     <div>
+      {console.log('{"name":"John", "age":30, "city":"New York"}')}
       <Container>
         <div
           className="text-center"

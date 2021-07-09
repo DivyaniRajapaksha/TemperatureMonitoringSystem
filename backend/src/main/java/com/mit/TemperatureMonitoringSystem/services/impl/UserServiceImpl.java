@@ -33,13 +33,20 @@ public class UserServiceImpl implements UserService {
         return repository.findAll();
     }
 
-
     @Override
     public String userLogin(String id, String password) {
         cryptography = Cryptography.getInstance();
         user =repository.userLogin(id);
         if(password.equals(cryptography.decode(user.getPassword()))){
-            return "Login Successful";
+
+            String userObj = "{\"userId\":\""+ user.getId() +"\"," +
+                            "\"userFirstName\":\""+ user.getFirstName() +"\"," +
+                            "\"userLastName\":\""+ user.getLastName() +"\"," +
+                            "\"userEmail\":\""+ user.getEmail() +"\"," +
+                            "\"msg\":\""+ "Login Successful!" +
+                            "\"}";
+
+            return userObj;
         }
         return "Not a valid user";
     }
