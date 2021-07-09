@@ -9,6 +9,7 @@ import NavBar from "./components/Navbar/Navbar";
 import Home from "./Pages/Home"
 import AddSensor from "./Pages/AddSensor";
 import Sensors from "./Pages/Sensors";
+import SensorDates from "./Pages/SensorDates"
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/chart" component={Chart} />
         <Route path="/addsensor" component={AddSensor} />
         <Route path="/sensors" component={Sensors} />
+        <Route path="/sensor-dates" component={SensorDates} />
         <Route path="/home" component={Home} />
       </div>
     </Router>
