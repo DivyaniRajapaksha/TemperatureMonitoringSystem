@@ -32,4 +32,15 @@ public class UserServiceImpl implements UserService {
         return repository.findAll();
     }
 
+
+    @Override
+    public String userLogin(String id, String password) {
+        cryptography = Cryptography.getInstance();
+        user =repository.userLogin(id);
+        if(password.equals(cryptography.decode(user.getPassword()))){
+            return "Login Successful";
+        }
+        return "Not a valid user";
+    }
+
 }

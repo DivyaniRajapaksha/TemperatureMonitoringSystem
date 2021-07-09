@@ -22,4 +22,9 @@ public class UserController {
     @GetMapping("/users")
     public List<User> getUsers(){ return userService.getUsers(); }
 
+    @GetMapping(value = "/login/{id}/{password}")
+    public String userLogin(@PathVariable String id, @PathVariable String password) {
+        return userService.userLogin(id, password);
+    }
+
 }
