@@ -6,6 +6,8 @@ import com.mit.TemperatureMonitoringSystem.services.SensorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class SensorServiceImpl implements SensorService {
     @Autowired
@@ -16,4 +18,7 @@ public class SensorServiceImpl implements SensorService {
         repository.save(sensor);
         return "Sensor Added successfully : " + sensor.getSensorName();
     }
+
+    @Override
+    public List<Sensor> getSensors() { return repository.findAll();}
 }

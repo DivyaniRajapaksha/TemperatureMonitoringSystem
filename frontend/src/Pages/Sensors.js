@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import constants from "../constants/constants";
+import axios from "axios";
 
 
 class Sensors extends Component {
@@ -17,12 +19,23 @@ class Sensors extends Component {
         this.getAllSensors = this.getAllSensors.bind(this);
     }
 
-    getAllSensors() {
-
+    async getAllSensors() {
+        try {
+            axios.get(constants.backend_url + "/api/sensor/sensors").then(
+                (res) => {
+                    this.setState({
+                        values: res.data,
+                    });
+                }
+            );
+        } catch (err) {
+            console.log(err);
+        }
     }
 
-
-
+    componentDidMount() {
+        this.getAllSensors();
+    }
 
     render() {
         return (
@@ -46,13 +59,21 @@ class Sensors extends Component {
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                    <td><Link to="/sensor-dates">View</Link></td>
-                                </tr>
+
+                                {
+                                    this.state.values.map((item, index) => {
+                                        return (
+                                            <tr>
+                                                <th scope="row">{index + 1}</th>
+                                                <td>{item.sensor_id}</td>
+                                                <td>{item.sensorName}</td>
+                                                <td>{item.location}</td>
+                                                <td><Link to="/sensor-dates">View</Link></td>
+                                            </tr>
+                                        )
+                                    })
+                                }
+
                             </tbody>
                         </table>
                     </div>

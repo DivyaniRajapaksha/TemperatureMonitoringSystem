@@ -27,14 +27,10 @@ class AddSensor extends Component {
                 this.setState({ error: "Please fill all the fields" })
             }
 
-            let id = this.state.id;
-            let name = this.state.name;
-            let loc = this.state.location;
-
             let sensorData = {
-                sensor_id: 1254,
-                location: "vffv",
-                sensorName: "vvfvfv"
+                sensor_id: this.state.id,
+                location: this.state.location,
+                sensorName: this.state.name,
             }
             console.log("data: " + sensorData)
             await axios.post("http://localhost:8080/api/sensor/add", sensorData).then((res) => {

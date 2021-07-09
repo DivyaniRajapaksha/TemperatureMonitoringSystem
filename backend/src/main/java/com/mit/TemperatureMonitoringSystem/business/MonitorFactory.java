@@ -1,6 +1,7 @@
 package com.mit.TemperatureMonitoringSystem.business;
 
-import com.mit.TemperatureMonitoringSystem.Utils.Common_Constants;
+import com.mit.TemperatureMonitoringSystem.utils.Common_Constants;
+import com.mit.TemperatureMonitoringSystem.utils.Common_Constants;
 
 public class MonitorFactory {
     public MonitorInterface getMonitorType(String data_type){

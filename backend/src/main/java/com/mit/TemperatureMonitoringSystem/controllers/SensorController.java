@@ -1,16 +1,15 @@
 package com.mit.TemperatureMonitoringSystem.controllers;
 
 import com.mit.TemperatureMonitoringSystem.modals.Sensor;
-import com.mit.TemperatureMonitoringSystem.modals.User;
 import com.mit.TemperatureMonitoringSystem.services.SensorService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping(value = "/api/sensor")
+@CrossOrigin
 
 public class SensorController {
     @Autowired
@@ -18,4 +17,7 @@ public class SensorController {
 
     @PostMapping("/add")
     public String addSensor(@RequestBody Sensor sensor){ return sensorService.addSensor(sensor);}
+
+    @GetMapping("/sensors")
+    public List<Sensor> getUsers(){ return sensorService.getSensors(); }
 }
