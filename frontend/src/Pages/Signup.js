@@ -22,6 +22,7 @@ const Signup = (props) => {
 
   const signup = (e) => {
     e.preventDefault();
+    setError("");
 
     if (
       firstName === "" ||
