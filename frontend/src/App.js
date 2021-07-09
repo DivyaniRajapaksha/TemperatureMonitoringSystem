@@ -6,15 +6,16 @@ import Login from "./Pages/Login";
 import Signup from "./Pages/Signup";
 import Profile from "./Pages/Profile";
 import NavBar from "./components/Navbar/Navbar";
-import Home from "./Pages/Home"
+import Home from "./Pages/Home";
 import AddSensor from "./Pages/AddSensor";
 import Sensors from "./Pages/Sensors";
-import SensorDates from "./Pages/SensorDates"
+import SensorDates from "./Pages/SensorDates";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <Router>
-      <NavBar/>
+      <NavBar />
       <div className="container">
         <br />
         <Route path="/" exact component={Login} />
@@ -26,6 +27,10 @@ function App() {
         <Route path="/sensor-dates" component={SensorDates} />
         <Route path="/home" component={Home} />
       </div>
+      <br />
+      <br />
+      <br />
+      <Footer />
     </Router>
   );
 }
