@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -24,9 +21,15 @@
   <component name="ChangeListManager">
     <list default="true" id="a5c99a2d-ed9e-4146-8712-d5a6115f7e47" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/frontend/src/Pages/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Pages/Login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Pages/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Pages/Profile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Pages/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Pages/Signup.js" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/frontend/src/Pages/AddSensor.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Pages/AddSensor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Pages/SensorDates.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Pages/SensorDates.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Pages/Sensors.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Pages/Sensors.js" afterDir="false" />
+>>>>>>> 4dd2ca1fa8e42f6efda275addd5e5f0d8063ec91
       <change beforePath="$PROJECT_DIR$/frontend/src/components/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Navbar/Navbar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +55,15 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -71,7 +82,7 @@
       </method>
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -88,12 +99,17 @@
       <workItem from="1625826346610" duration="656000" />
       <workItem from="1625836276532" duration="683000" />
       <workItem from="1625837025709" duration="300000" />
+<<<<<<< HEAD
       <workItem from="1625839490622" duration="7990000" />
+=======
+      <workItem from="1625839490622" duration="5327000" />
+      <workItem from="1625850226089" duration="2061000" />
+>>>>>>> 4dd2ca1fa8e42f6efda275addd5e5f0d8063ec91
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
