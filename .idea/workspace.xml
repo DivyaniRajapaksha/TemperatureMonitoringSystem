@@ -19,15 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5c99a2d-ed9e-4146-8712-d5a6115f7e47" name="Default Changelist" comment="">
+    <list default="true" id="a5c99a2d-ed9e-4146-8712-d5a6115f7e47" name="Default Changelist" comment="Resolving merge conflicts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/business/MonitorFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/business/MonitorFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/business/TemperatureMonitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/business/TemperatureMonitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/controllers/SensorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/controllers/SensorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/services/MonitorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/services/MonitorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/services/SensorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/services/SensorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/services/impl/MonitorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/services/impl/MonitorServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/services/impl/SensorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/services/impl/SensorServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +96,14 @@
       <workItem from="1625850226089" duration="3974000" />
       <workItem from="1625850226089" duration="2061000" />
     </task>
+    <task id="LOCAL-00001" summary="Resolving merge conflicts">
+      <created>1625889196752</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1625889196752</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,38 +121,58 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Resolving merge conflicts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Resolving merge conflicts" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="148" key="GridCell.Tab.0.bottom" timestamp="1625856414442">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1625889118015">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1625889118015" />
     <state width="1877" height="148" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1625856414442" />
-    <state width="1877" height="148" key="GridCell.Tab.0.center" timestamp="1625856414442">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1625889118015">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1625889118015" />
     <state width="1877" height="148" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1625856414442" />
-    <state width="1877" height="148" key="GridCell.Tab.0.left" timestamp="1625856414442">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1625889118015">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1625889118015" />
     <state width="1877" height="148" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1625856414442" />
-    <state width="1877" height="148" key="GridCell.Tab.0.right" timestamp="1625856414442">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1625889118015">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1625889118015" />
     <state width="1877" height="148" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1625856414442" />
-    <state width="1877" height="148" key="GridCell.Tab.1.bottom" timestamp="1625856414442">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1493" height="210" key="GridCell.Tab.1.bottom" timestamp="1625889118015">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1625889118015" />
     <state width="1877" height="148" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1625856414442" />
-    <state width="1877" height="148" key="GridCell.Tab.1.center" timestamp="1625856414442">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1493" height="210" key="GridCell.Tab.1.center" timestamp="1625889118015">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1625889118015" />
     <state width="1877" height="148" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1625856414442" />
-    <state width="1877" height="148" key="GridCell.Tab.1.left" timestamp="1625856414442">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1493" height="210" key="GridCell.Tab.1.left" timestamp="1625889118015">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1625889118015" />
     <state width="1877" height="148" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1625856414442" />
-    <state width="1877" height="148" key="GridCell.Tab.1.right" timestamp="1625856414442">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1493" height="210" key="GridCell.Tab.1.right" timestamp="1625889118015">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1493" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1625889118015" />
     <state width="1877" height="148" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1625856414442" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1625889245264">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1625889245264" />
+    <state x="417" y="201" key="git4idea.merge.GitPullDialog" timestamp="1625889225702">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="417" y="201" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1625889225702" />
   </component>
 </project>
