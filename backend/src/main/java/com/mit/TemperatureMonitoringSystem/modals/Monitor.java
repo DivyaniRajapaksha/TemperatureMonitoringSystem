@@ -5,6 +5,8 @@ public class Monitor {
     private String type;
     private String date;
     private String time;
+    private boolean notificationSent;
+    private double data_value;
 
     public boolean isNotificationSent() {
         return notificationSent;
@@ -14,8 +16,6 @@ public class Monitor {
         this.notificationSent = notificationSent;
     }
 
-    private boolean notificationSent;
-
     public String getTime() {
         return time;
     }
@@ -23,8 +23,6 @@ public class Monitor {
     public void setTime(String time) {
         this.time = time;
     }
-
-    private double data_value;
 
     public String getType() {
         return type;

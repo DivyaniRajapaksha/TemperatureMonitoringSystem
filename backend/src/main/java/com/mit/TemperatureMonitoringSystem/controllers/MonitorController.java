@@ -29,4 +29,11 @@ public class MonitorController {
     @GetMapping("/sensorData/{id}")
     public List<Monitor> getSensorDetails(@PathVariable String id){ return monitorService.getData(id);}
 
+    @GetMapping("/alertData")
+    public List<Monitor> getNotifiedData(){ return monitorService.getNotifiedData();}
+
+    @GetMapping("/getDataByDate/{date}")
+    public List<Monitor> getDataByDate(@PathVariable String date){ return monitorService.getDataByDate(date);}
+
+
 }

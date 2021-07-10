@@ -63,13 +63,14 @@ const Login = (props) => {
           className="text-center"
           style={{ padding: "30px", backgroundColor: "#fff" }}
         >
-          <h1 style={{ color: "rgb(51, 51, 51)" }}>Login</h1>
+          {/* <h1 style={{ color: "rgb(51, 51, 51)" }}>Login</h1> */}
         </div>
         <Row style={{ marginTop: "30px" }}>
           <Col>
             <Image src={logo} thumbnail className="border-0" />
           </Col>
           <Col>
+          <h1 style={{ color: "rgb(51, 51, 51)" }} style={{display: 'flex', justifyContent: 'center'}}>Login</h1>
             {localStorage.getItem("msgSignup") ? (
               <Alert variant={"success"}>
                 {localStorage.getItem("msgSignup")}
