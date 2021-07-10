@@ -32,5 +32,8 @@ public class MonitorController {
     @GetMapping("/alertData")
     public List<Monitor> getNotifiedData(){ return monitorService.getNotifiedData();}
 
+    @GetMapping("/getDataByDate/{date}")
+    public List<Monitor> getDataByDate(@PathVariable String date){ return monitorService.getDataByDate(date);}
+
 
 }

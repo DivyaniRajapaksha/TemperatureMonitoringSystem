@@ -47,6 +47,11 @@ public class MonitorServiceImpl implements MonitorService {
 
     @Override
     public List<Monitor> getNotifiedData() {
-        return repository.getLoggedUserDetails(true);
+        return repository.getAlerts(true);
+    }
+
+    @Override
+    public List<Monitor> getDataByDate(String date) {
+        return repository.getDataByDate(date);
     }
 }
