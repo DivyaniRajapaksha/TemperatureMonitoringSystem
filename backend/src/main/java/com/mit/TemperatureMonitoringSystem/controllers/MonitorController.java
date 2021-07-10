@@ -15,7 +15,10 @@ public class MonitorController {
     private MonitorService monitorService;
 
     @PostMapping("/data")
-    public void addSensor(@RequestBody Monitor monitor){  monitorService.addData(monitor);}
+    public void addSensor(@RequestBody Monitor monitor){
+        monitor.setNotificationSent(false);
+        monitorService.addData(monitor);
+    }
 
     @GetMapping("/getData")
     public List<Monitor> getData(){ return monitorService.getData(); }
