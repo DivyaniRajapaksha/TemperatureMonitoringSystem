@@ -9,7 +9,7 @@ import {
   Image,
   Alert,
 } from "react-bootstrap";
-import logo from "../img/logo.jpg";
+import logo from "../img/signup.svg";
 
 const Signup = (props) => {
   const [firstName, setFirstName] = useState("");
@@ -70,13 +70,13 @@ const Signup = (props) => {
       <Container>
         <div
           className="text-center"
-          style={{ padding: "30px", backgroundColor: "#333" }}
+          style={{ padding: "30px", backgroundColor: "#fff" }}
         >
-          <h1 style={{ color: "#fff" }}>Signup</h1>
+          <h1 style={{ color: "rgb(51, 51, 51)" }}>Sign Up</h1>
         </div>
         <Row style={{ marginTop: "30px" }}>
           <Col>
-            <Image src={logo} thumbnail />
+            <Image src={logo} thumbnail className="border-0" />
           </Col>
           <Col>
             {error ? <Alert variant={"danger"}>{error}</Alert> : null}
@@ -144,7 +144,7 @@ const Signup = (props) => {
                 />
               </Form.Group>
               <Button size="lg" variant="dark" type="submit" className="w-100">
-                Submit
+                Sign Up
               </Button>
             </Form>
           </Col>
