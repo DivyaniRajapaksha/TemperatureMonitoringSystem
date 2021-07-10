@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "../ProfileCircle/ProfileCircle.css";
 // import pic5 from "../../img/Profilecircle/ico.png";
 import pro1 from "../../img/pro1.jpg";
+import pr4 from "../../img/pr4.png";
 import { Nav, form, Image, Col, Row, Button } from "react-bootstrap";
 
 export class Profilecircle extends Component {
@@ -11,12 +12,12 @@ export class Profilecircle extends Component {
         <div class="v1_2">
           <Image
             class="mx-auto"
-            src={pro1}
+            src={pr4}
             style={{
-              width: "190px",
-              height: "190px",
-              marginLeft: "10px",
-              marginTop: "10px",
+              width: "200px",
+              height: "200px",
+              marginLeft: "5px",
+              marginTop: "5px",
             }}
             roundedCircle
           />

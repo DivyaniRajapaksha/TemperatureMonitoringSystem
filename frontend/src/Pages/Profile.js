@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import pic5 from "../img/back.jpg";
 import bg2 from "../img/bg2.jpg";
+
 import { Box, Grid, Paper, Typography, Button } from "@material-ui/core";
 import { Nav, form, Image, Col, Row, Container, Card } from "react-bootstrap";
 import Profilepic from "../components/ProfileCircle/ProfileCircle";
@@ -60,7 +61,7 @@ export class Profile extends Component {
       >
         <img
           src={bg2}
-          style={{ width: "97.2%", height: "35%", position: "absolute" }}
+          style={{ width: "97.2%", height: "25%", position: "absolute" }}
         ></img>
         return (
         <div
@@ -83,22 +84,35 @@ export class Profile extends Component {
               <Profilepic />
             </div>
           </div>
-          <h1 className="text-center" style={{ marginTop: "-35px" }}></h1>
-          <h3 className="text-center">{this.state.values.firstName}</h3>;
-          <h6 className="text-center text-muted">{this.state.values.email}</h6>
+          {/* <h1 className="text-center" style={{ marginTop: "-30px" }}></h1> */}
+          <h3 className="text-center" style={{ marginTop: "-40px" }}>
+            {this.state.values.firstName}
+          </h3>
+          ;
+          <h6 className="text-center text-muted" style={{ marginTop: "-20px" }}>
+            {this.state.values.email}
+          </h6>
           <br />
           <br />
-          <div className="text-center my-3">
-            <Link to="edit-profile">
-              <Box display="flex" justifyContent="center">
-                <Button variant="contained">Edit Profile</Button>
-              </Box>
-            </Link>
-          </div>
           <div className="text-center my-3">
             <Box display="flex" justifyContent="center">
               <Button variant="contained">Delete Profile</Button>
             </Box>
+          </div>
+          <div class="row">
+            <div
+              class="container shadow-sm p-3 mb-3 bg-body rounded bg-light text-dark text-center"
+              style={{ width: "600px", marginTop: "35PX" }}
+            >
+              <br></br>
+              <p>
+                Aut ad enim nihil et. Voluptas sint deleniti voluptate officiis
+                quibusdam reiciendis quisquam non nihil. Velit et explicabo vel
+                sunt. Assumenda voluptatem dolor assumenda voluptas. Quos
+                reiciendis ad ducimus perspiciatis. Eius quia reiciendis.
+              </p>
+            </div>
+            <div>,</div>
           </div>
           <br></br>
           <br />
