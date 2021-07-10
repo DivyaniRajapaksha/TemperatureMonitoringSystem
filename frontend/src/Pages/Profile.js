@@ -17,7 +17,6 @@ export class Profile extends Component {
     history: PropTypes.object.isRequired,
   };
 
-  //this.props.history.push("/")
   constructor() {
     super();
     this.state = {
@@ -41,14 +40,26 @@ export class Profile extends Component {
       });
   }
 
+  async deleteUser() {
+    var userId = localStorage.getItem("user-id");
+    axios
+      .delete(constants.backend_url + "/api/user/user/delete/" + userId)
+      .then((res) => {
+        console.log(res.data);
+        if (res.data) {
+          localStorage.setItem("user-id", "");
+          this.props.history.push("/login");
+          window.location.reload();
+        }
+      })
+      .catch(function (err) {
+        console.log(err);
+      });
+  }
+
   componentDidMount() {
     this.getUser();
   }
-
-  // componentDidMount() {
-  //   this.getUser();
-  //   this.setState({ type: this.props.match.type });
-  // }
 
   render() {
     return (
@@ -84,7 +95,6 @@ export class Profile extends Component {
               <Profilepic />
             </div>
           </div>
-          {/* <h1 className="text-center" style={{ marginTop: "-30px" }}></h1> */}
           <h3 className="text-center" style={{ marginTop: "-40px" }}>
             {this.state.values.firstName}
           </h3>
@@ -96,7 +106,14 @@ export class Profile extends Component {
           <br />
           <div className="text-center my-3">
             <Box display="flex" justifyContent="center">
-              <Button variant="contained">Delete Profile</Button>
+              <Button
+                variant="contained"
+                onClick={() => {
+                  this.deleteUser();
+                }}
+              >
+                Delete Profile
+              </Button>
             </Box>
           </div>
           <div class="row">
