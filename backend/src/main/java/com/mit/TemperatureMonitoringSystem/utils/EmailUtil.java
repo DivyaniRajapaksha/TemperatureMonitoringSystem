@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Properties;
 
 public class EmailUtil {
-    public static void sendBulkEmail(final String subject, final List<String> emailToAddresses,
+    public static boolean sendBulkEmail(final String subject, final List<String> emailToAddresses,
                                      final String emailBodyText) {
 
         final String username = "isamarakoon365@gmail.com";
@@ -77,10 +77,12 @@ public class EmailUtil {
             Transport.send(message);
 
             System.out.println("Email successfully sent to " + emails);
+            return true;
         } catch (
                 MessagingException e) {
             System.out.println("Email sending failed to " + emails);
             System.out.println(e);
+            return false;
         }
     }
 }
