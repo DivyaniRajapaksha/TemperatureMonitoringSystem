@@ -10,4 +10,5 @@ public interface MonitorService {
     List<Monitor> getData();
     String deleteData(int id);
     List<Monitor> getData(String id);
+    List<Monitor> getNotifiedData();
 }

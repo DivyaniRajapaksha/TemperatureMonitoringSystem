@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Properties;
 
 public class EmailUtil {
-    public static boolean sendBulkEmail(final String subject, final List<String> emailToAddresses,
+    public boolean sendBulkEmail(final String subject, final List<String> emailToAddresses,
                                      final String emailBodyText) {
 
         final String username = "isamarakoon365@gmail.com";
