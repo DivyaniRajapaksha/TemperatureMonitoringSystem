@@ -10,7 +10,7 @@ import {
   Alert,
 } from "react-bootstrap";
 import logo from "../img/logo.jpg";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 const Login = (props) => {
   const [email, setEmail] = useState("");
@@ -18,6 +18,7 @@ const Login = (props) => {
   const [password, setPassword] = useState("");
   const [msg, setMsg] = useState("");
   const [user, setUser] = useState();
+  const history = useHistory();
 
   const login = (e) => {
     e.preventDefault();
@@ -35,10 +36,12 @@ const Login = (props) => {
       .get(`http://localhost:8080/api/user/login/${email}/${password}`)
       .then((res) => {
         console.log(res.data);
+        localStorage.setItem("user-id", res.data.userId);
         localStorage.setItem("user", JSON.stringify(res.data));
         setUser(res.data);
-        alert(JSON.stringify(res.data));
       });
+
+    history.push("/profile");
 
     /* if (user === "Not a valid user" || !user) {
       setError("Invalid user!");
@@ -58,13 +61,13 @@ const Login = (props) => {
       <Container>
         <div
           className="text-center"
-          style={{ padding: "30px", backgroundColor: "#333" }}
+          style={{ padding: "30px", backgroundColor: "#fff" }}
         >
-          <h1 style={{ color: "#fff" }}>Login</h1>
+          <h1 style={{ color: "rgb(51, 51, 51)" }}>Login</h1>
         </div>
         <Row style={{ marginTop: "30px" }}>
           <Col>
-            <Image src={logo} thumbnail />
+            <Image src={logo} thumbnail className="border-0" />
           </Col>
           <Col>
             {localStorage.getItem("msgSignup") ? (
@@ -104,7 +107,7 @@ const Login = (props) => {
                 <Form.Check label="Remember me" />
               </Form.Group>
               <Button size="lg" variant="dark" type="submit" className="w-100">
-                Submit
+                Login
               </Button>
               <Form.Group style={{ marginTop: "5%" }}>
                 <Link to="/Signup">Create an account</Link>
