@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import {
   Container,
   Row,
@@ -11,7 +12,47 @@ import {
 import logo from "../img/logo.jpg";
 import { Link } from "react-router-dom";
 
-const Login = () => {
+const Login = (props) => {
+  const [email, setEmail] = useState("");
+  const [error, setError] = useState("");
+  const [password, setPassword] = useState("");
+  const [msg, setMsg] = useState("");
+  const [user, setUser] = useState();
+
+  const login = (e) => {
+    e.preventDefault();
+
+    localStorage.clear();
+    setError("");
+
+    if (email === "" || password === "") {
+      setError("Please Fill All the Fields!");
+      return;
+    }
+
+    //storing data in mongodb database using axios
+    axios
+      .get(`http://localhost:8080/api/user/login/${email}/${password}`)
+      .then((res) => {
+        console.log(res.data);
+        localStorage.setItem("user", JSON.stringify(res.data));
+        setUser(res.data);
+        alert(JSON.stringify(res.data));
+      });
+
+    /* if (user === "Not a valid user" || !user) {
+      setError("Invalid user!");
+      console.log(typeof user);
+      return;
+    }
+ */
+    //props.history.push("/profile");
+    //window.location.reload();
+
+    setEmail("");
+    setPassword("");
+  };
+
   return (
     <div>
       <Container>
@@ -31,14 +72,29 @@ const Login = () => {
                 {localStorage.getItem("msgSignup")}
               </Alert>
             ) : null}
-            <Form>
+            {error ? <Alert variant={"danger"}>{error}</Alert> : null}
+            <Form onSubmit={login}>
               <Form.Group>
                 <Form.Label>Email address</Form.Label>
-                <Form.Control type="email" placeholder="Enter Email" />
+                <Form.Control
+                  type="email"
+                  placeholder="Enter Email"
+                  value={email}
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                  }}
+                />
               </Form.Group>
               <Form.Group>
                 <Form.Label>Password</Form.Label>
-                <Form.Control type="password" placeholder="Enter Password" />
+                <Form.Control
+                  type="password"
+                  placeholder="Enter Password"
+                  value={password}
+                  onChange={(e) => {
+                    setPassword(e.target.value);
+                  }}
+                />
               </Form.Group>
               <Form.Group
                 as={Row}
