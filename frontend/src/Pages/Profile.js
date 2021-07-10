@@ -2,15 +2,53 @@ import React, { Component } from "react";
 import pic5 from "../img/back.jpg";
 import bg2 from "../img/bg2.jpg";
 import { Box, Grid, Paper, Typography, Button } from "@material-ui/core";
-import Rating from "@material-ui/lab/Rating";
 import { Nav, form, Image, Col, Row, Container, Card } from "react-bootstrap";
-import bio from "../img/bio.png";
 import Profilepic from "../components/ProfileCircle/ProfileCircle";
-import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import constants from "../constants/constants";
+import PropTypes from "prop-types";
 
 export class Profile extends Component {
+  static propTypes = {
+    match: PropTypes.object.isRequired,
+    location: PropTypes.object.isRequired,
+    history: PropTypes.object.isRequired,
+  };
+
+  //this.props.history.push("/")
+  constructor() {
+    super();
+    this.state = {
+      values: [],
+    };
+    this.getUser = this.getUser.bind(this);
+  }
+
+  async getUser() {
+    var userId = localStorage.getItem("user-id");
+    console.log(userId);
+    axios
+      .get(constants.backend_url + "/api/user/users/" + userId)
+      .then((res) => {
+        this.setState({
+          values: res.data,
+        });
+      })
+      .catch(function (err) {
+        console.log(err);
+      });
+  }
+
+  componentDidMount() {
+    this.getUser();
+  }
+
+  // componentDidMount() {
+  //   this.getUser();
+  //   this.setState({ type: this.props.match.type });
+  // }
+
   render() {
     return (
       <div
@@ -22,7 +60,7 @@ export class Profile extends Component {
       >
         <img
           src={bg2}
-          style={{ width: "97.2%", height: "30%", position: "absolute" }}
+          style={{ width: "97.2%", height: "35%", position: "absolute" }}
         ></img>
         return (
         <div
@@ -40,18 +78,14 @@ export class Profile extends Component {
             <br></br>
             <br></br>
           </div>
-
           <div class="row">
             <div class="mx-auto" style={{ width: "345px" }}>
               <Profilepic />
             </div>
           </div>
-          <h1 className="text-center" style={{ marginTop: "-35px" }}>
-            {/* {item.name} */}
-          </h1>
-          {/* <h5 className="text-center text-muted">{item.email}</h5> */}
-          <h3 className="text-center">Kayla Borer</h3>
-          <h6 className="text-center text-muted">kaylaborer@gmail.com</h6>
+          <h1 className="text-center" style={{ marginTop: "-35px" }}></h1>
+          <h3 className="text-center">{this.state.values.firstName}</h3>;
+          <h6 className="text-center text-muted">{this.state.values.email}</h6>
           <br />
           <br />
           <div className="text-center my-3">
@@ -67,7 +101,6 @@ export class Profile extends Component {
             </Box>
           </div>
           <br></br>
-
           <br />
         </div>
       </div>
