@@ -3,7 +3,16 @@ import pic5 from "../img/back.jpg";
 import bg2 from "../img/bg2.jpg";
 
 import { Box, Grid, Paper, Typography, Button } from "@material-ui/core";
-import { Nav, form, Image, Col, Row, Container, Card } from "react-bootstrap";
+import {
+  Nav,
+  form,
+  Image,
+  Col,
+  Row,
+  Container,
+  Card,
+  Modal,
+} from "react-bootstrap";
 import Profilepic from "../components/ProfileCircle/ProfileCircle";
 import { Link } from "react-router-dom";
 import axios from "axios";
@@ -48,7 +57,7 @@ export class Profile extends Component {
         console.log(res.data);
         if (res.data) {
           localStorage.setItem("user-id", "");
-          this.props.history.push("/login");
+          this.props.history.push("/");
           window.location.reload();
         }
       })
@@ -59,6 +68,10 @@ export class Profile extends Component {
 
   componentDidMount() {
     this.getUser();
+  }
+
+  handleModal() {
+    this.setState({ show: !this.state.show });
   }
 
   render() {
@@ -109,11 +122,40 @@ export class Profile extends Component {
               <Button
                 variant="contained"
                 onClick={() => {
-                  this.deleteUser();
+                  this.handleModal();
                 }}
               >
                 Delete Profile
               </Button>
+              <Modal
+                id="one"
+                show={this.state.show}
+                onHide={() => this.handleModal()}
+              >
+                <Modal.Header>Message</Modal.Header>
+                <Modal.Body>
+                  <h6>Are you sure want to cancel your account?</h6>
+                </Modal.Body>
+                <Modal.Footer>
+                  <button
+                    onClick={() => {
+                      this.deleteUser();
+                    }}
+                    class="btn btn-primary"
+                  >
+                    Yes
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    onClick={() => {
+                      this.handleModal();
+                    }}
+                  >
+                    No
+                  </button>
+                </Modal.Footer>
+              </Modal>
             </Box>
           </div>
           <div class="row">
