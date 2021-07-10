@@ -9,8 +9,8 @@ import {
   Image,
   Alert,
 } from "react-bootstrap";
-import logo from "../img/login.svg";
-import { Link } from "react-router-dom";
+import logo from "../img/logo.jpg";
+import { Link, useHistory } from "react-router-dom";
 
 const Login = (props) => {
   const [email, setEmail] = useState("");
@@ -18,6 +18,7 @@ const Login = (props) => {
   const [password, setPassword] = useState("");
   const [msg, setMsg] = useState("");
   const [user, setUser] = useState();
+  const history = useHistory();
 
   const login = (e) => {
     e.preventDefault();
@@ -35,10 +36,12 @@ const Login = (props) => {
       .get(`http://localhost:8080/api/user/login/${email}/${password}`)
       .then((res) => {
         console.log(res.data);
+        localStorage.setItem("user-id", res.data.userId);
         localStorage.setItem("user", JSON.stringify(res.data));
         setUser(res.data);
-        alert(JSON.stringify(res.data));
       });
+
+    history.push("/profile");
 
     /* if (user === "Not a valid user" || !user) {
       setError("Invalid user!");

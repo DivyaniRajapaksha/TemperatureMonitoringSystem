@@ -7,6 +7,7 @@ import com.mit.TemperatureMonitoringSystem.utils.Cryptography;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -18,6 +19,7 @@ public class UserServiceImpl implements UserService {
 
     Cryptography cryptography;
     User user;
+    List<String> stringList=new ArrayList<String>();
 
 
     @Override
@@ -60,6 +62,16 @@ public class UserServiceImpl implements UserService {
     public String deleteUser(int id) {
         repository.deleteById(id);
         return "User deleted successfully: id :" + id;
+    }
+
+    @Override
+    public List<String> getAllEmails() {
+        List<User> list=repository.findAll();
+        for (User user: list) {
+            System.out.println("Hi"+user.getEmail());
+            stringList.add(user.getEmail());
+        }
+        return stringList;
     }
 
 }

@@ -13,5 +13,6 @@ public interface UserService {
     String deleteUser(int id);
 
     String userLogin(String id, String password);
+    List<String> getAllEmails();
 
 }

@@ -4,7 +4,9 @@ import com.mit.TemperatureMonitoringSystem.business.MonitorFactory;
 import com.mit.TemperatureMonitoringSystem.business.MonitorInterface;
 import com.mit.TemperatureMonitoringSystem.modals.Monitor;
 import com.mit.TemperatureMonitoringSystem.repository.MonitorRepository;
+import com.mit.TemperatureMonitoringSystem.repository.UserRepository;
 import com.mit.TemperatureMonitoringSystem.services.MonitorService;
+import com.mit.TemperatureMonitoringSystem.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,11 +20,14 @@ public class MonitorServiceImpl implements MonitorService {
     @Autowired
     private MonitorRepository repository;
 
+    @Autowired
+    private UserService userService;
+
     @Override
     public void addData(Monitor monitor) {
         repository.save(monitor);
         monitorInterface=monitorFactory.getMonitorType(monitor.getType());
-        monitorInterface.monitor(monitor);
+        monitorInterface.monitor(monitor,userService.getAllEmails());
     }
 
     @Override

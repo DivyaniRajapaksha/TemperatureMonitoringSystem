@@ -8,6 +8,5 @@ public interface UserRepository extends MongoRepository<User, Integer> {
 
     @Query(value="{ 'email' : ?0 }")
     User userLogin(String id);
-
 }
 
