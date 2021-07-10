@@ -21,11 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="a5c99a2d-ed9e-4146-8712-d5a6115f7e47" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/controllers/MonitorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/controllers/MonitorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/controllers/SensorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/controllers/SensorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/repository/MonitorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/repository/MonitorRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/services/MonitorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/services/MonitorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/services/impl/MonitorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/services/impl/MonitorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/business/TemperatureMonitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/business/TemperatureMonitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/utils/EmailUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/mit/TemperatureMonitoringSystem/utils/EmailUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Pages/SensorDates.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Pages/SensorDates.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/Pages/Sensors.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Pages/Sensors.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +101,7 @@
       <workItem from="1625850226089" duration="3974000" />
       <workItem from="1625850226089" duration="2061000" />
       <workItem from="1625889749224" duration="1833000" />
-      <workItem from="1625895608011" duration="1908000" />
+      <workItem from="1625895608011" duration="5131000" />
     </task>
     <servers />
   </component>
@@ -121,37 +121,37 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="198" key="GridCell.Tab.0.bottom" timestamp="1625897517189">
+    <state width="1877" height="317" key="GridCell.Tab.0.bottom" timestamp="1625899856954">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="198" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1625897517189" />
-    <state width="1877" height="198" key="GridCell.Tab.0.center" timestamp="1625897517189">
+    <state width="1877" height="317" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1625899856954" />
+    <state width="1877" height="317" key="GridCell.Tab.0.center" timestamp="1625899856954">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="198" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1625897517189" />
-    <state width="1877" height="198" key="GridCell.Tab.0.left" timestamp="1625897517188">
+    <state width="1877" height="317" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1625899856954" />
+    <state width="1877" height="317" key="GridCell.Tab.0.left" timestamp="1625899856953">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="198" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1625897517188" />
-    <state width="1877" height="198" key="GridCell.Tab.0.right" timestamp="1625897517189">
+    <state width="1877" height="317" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1625899856953" />
+    <state width="1877" height="317" key="GridCell.Tab.0.right" timestamp="1625899856954">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="198" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1625897517189" />
-    <state width="1877" height="198" key="GridCell.Tab.1.bottom" timestamp="1625897517190">
+    <state width="1877" height="317" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1625899856954" />
+    <state width="1877" height="317" key="GridCell.Tab.1.bottom" timestamp="1625899856955">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="198" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1625897517190" />
-    <state width="1877" height="198" key="GridCell.Tab.1.center" timestamp="1625897517189">
+    <state width="1877" height="317" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1625899856955" />
+    <state width="1877" height="317" key="GridCell.Tab.1.center" timestamp="1625899856954">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="198" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1625897517189" />
-    <state width="1877" height="198" key="GridCell.Tab.1.left" timestamp="1625897517189">
+    <state width="1877" height="317" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1625899856954" />
+    <state width="1877" height="317" key="GridCell.Tab.1.left" timestamp="1625899856954">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="198" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1625897517189" />
-    <state width="1877" height="198" key="GridCell.Tab.1.right" timestamp="1625897517190">
+    <state width="1877" height="317" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1625899856954" />
+    <state width="1877" height="317" key="GridCell.Tab.1.right" timestamp="1625899856954">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="198" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1625897517190" />
+    <state width="1877" height="317" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1625899856954" />
   </component>
 </project>

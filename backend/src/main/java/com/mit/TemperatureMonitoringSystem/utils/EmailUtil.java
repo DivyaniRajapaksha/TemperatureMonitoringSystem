@@ -11,10 +11,10 @@ public class EmailUtil {
                                      final String emailBodyText) {
 
         // from email address
-        final String username = "divyanirajapaksha@gmail.com";
+        final String username = "isamarakoon365@gmail.com";
 
         // make sure you put your correct password
-        final String password = "FRisky123*";
+        final String password = "Anushika123@";
 
         // smtp email server
         final String smtpHost = "smtp.gmail.com";
