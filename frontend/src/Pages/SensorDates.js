@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import constants from "../constants/constants";
+import axios from "axios";
 
 
 class SensorDates extends Component {
@@ -17,12 +19,23 @@ class SensorDates extends Component {
         this.getAllSensorDates = this.getAllSensorDates.bind(this);
     }
 
-    getAllSensorDates() {
-
+    async getAllSensorDates() {
+        try {
+            axios.get(constants.backend_url + "/api/monitor/sensorData/" + this.props.match.params.date).then(
+                (res) => {
+                    this.setState({
+                        values: res.data,
+                    });
+                }
+            );
+        } catch (err) {
+            console.log(err);
+        }
     }
 
-
-
+    componentDidMount() {
+        this.getAllSensorDates();
+    }
 
     render() {
         return (
@@ -32,16 +45,20 @@ class SensorDates extends Component {
                 </div>
                 <div className="my-5">
                     <div>
-                        <Link to="/chart">
-                            <div className="alert alert-primary my-3" role="alert" style={{ cursor: "pointer" }}>
-                                This is a primary alert—check it out!
-                            </div>
-                        </Link>
-                        <Link to="/chart">
-                            <div className="alert alert-primary my-3" role="alert" style={{ cursor: "pointer" }}>
-                                This is a primary alert—check it out!
-                            </div>
-                        </Link>
+                        {
+                            this.state.values.map((item, index) => {
+                                return (
+                                    <div key={index}>
+                                        <Link to="/chart" >
+                                            <div className="alert alert-primary my-3" role="alert" style={{ cursor: "pointer" }}>
+                                                {item.date}
+                                            </div>
+                                        </Link>
+                                    </div>
+                                )
+                            })
+                        }
+
                     </div>
 
                 </div>

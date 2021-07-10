@@ -65,9 +65,7 @@ class Sensors extends Component {
                       <td>{item.sensor_id}</td>
                       <td>{item.sensorName}</td>
                       <td>{item.location}</td>
-                      <td>
-                        <Link to="/sensor-dates">View</Link>
-                      </td>
+                      <td><Link to={"/sensor-dates/" + item.sensor_id}>View</Link></td>
                     </tr>
                   );
                 })}

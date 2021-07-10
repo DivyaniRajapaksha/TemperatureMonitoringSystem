@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/api/sensor")
-
+@CrossOrigin
 public class SensorController {
     @Autowired
     private SensorService sensorService;

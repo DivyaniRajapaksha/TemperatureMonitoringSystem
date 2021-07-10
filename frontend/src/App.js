@@ -23,8 +23,8 @@ function App() {
         <Route path="/profile" component={Profile} />
         <Route path="/chart" component={Chart} />
         <Route path="/addsensor" component={AddSensor} />
-        <Route path="/sensors" component={Sensors} />
-        <Route path="/sensor-dates" component={SensorDates} />
+        <Route path="/sensors/" component={Sensors} />
+        <Route path="/sensor-dates/:date" component={SensorDates} />
         <Route path="/home" component={Home} />
       </div>
       <br />
