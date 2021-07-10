@@ -9,6 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/api/monitor")
+@CrossOrigin
 public class MonitorController {
     @Autowired
     private MonitorService monitorService;
@@ -21,5 +22,8 @@ public class MonitorController {
 
     @DeleteMapping("/delete/{id}")
     public String deleteData(@PathVariable int id){ return monitorService.deleteData(id);}
+
+    @GetMapping("/sensorData/{id}")
+    public List<Monitor> getSensorDetails(@PathVariable String id){ return monitorService.getData(id);}
 
 }
