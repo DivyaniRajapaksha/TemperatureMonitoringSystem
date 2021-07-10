@@ -72,13 +72,14 @@ const Signup = (props) => {
           className="text-center"
           style={{ padding: "30px", backgroundColor: "#fff" }}
         >
-          <h1 style={{ color: "rgb(51, 51, 51)" }}>Sign Up</h1>
+          {/* <h1 style={{ color: "rgb(51, 51, 51)" }} style={{display: 'flex', justifyContent: 'center'}}>Sign Up</h1> */}
         </div>
         <Row style={{ marginTop: "30px" }}>
           <Col>
             <Image src={logo} thumbnail className="border-0" />
           </Col>
           <Col>
+          <h1 style={{ color: "rgb(51, 51, 51)" }} style={{display: 'flex', justifyContent: 'center'}}>Sign Up</h1>
             {error ? <Alert variant={"danger"}>{error}</Alert> : null}
             {msg ? <Alert variant={"success"}>{msg}</Alert> : null}
             <Form onSubmit={signup}>
