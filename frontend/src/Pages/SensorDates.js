@@ -15,17 +15,26 @@ class SensorDates extends Component {
         super();
         this.state = {
             values: [],
+            dates: []
         };
         this.getAllSensorDates = this.getAllSensorDates.bind(this);
     }
 
     async getAllSensorDates() {
         try {
-            axios.get(constants.backend_url + "/api/monitor/sensorData/" + this.props.match.params.date).then(
+            axios.get(constants.backend_url + "/api/monitor/sensorData/" + this.props.match.params.id).then(
                 (res) => {
                     this.setState({
                         values: res.data,
                     });
+
+                    var datesArray = [];
+                    this.state.values.forEach((item) => {
+                        datesArray.push(item.date)
+                    })
+                    this.setState({
+                        dates: Array.from(new Set(datesArray))
+                    })
                 }
             );
         } catch (err) {
@@ -46,12 +55,12 @@ class SensorDates extends Component {
                 <div className="my-5">
                     <div>
                         {
-                            this.state.values.map((item, index) => {
+                            this.state.dates.map((item, index) => {
                                 return (
                                     <div key={index}>
-                                        <Link to="/chart" >
+                                        <Link to={"/chart/" + item} >
                                             <div className="alert alert-primary my-3" role="alert" style={{ cursor: "pointer" }}>
-                                                {item.date}
+                                                {item}
                                             </div>
                                         </Link>
                                     </div>
