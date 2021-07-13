@@ -31,7 +31,7 @@ const NavBar = () => {
   const user = JSON.parse(localStorage.getItem("user"));
 
   return (
-    <Navbar bg="light" variant="light">
+    <Navbar bg="dark" variant="dark">
       <Navbar.Brand onClick={home}>
         <img
           alt=""
