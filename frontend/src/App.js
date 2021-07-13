@@ -30,7 +30,9 @@ function App() {
       <br />
       <br />
       <br />
-      {/* <Footer /> */}
+      <div style={{ marginTop: "10%" }}>
+        <Footer />
+      </div>
     </Router>
   );
 }
