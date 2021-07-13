@@ -43,7 +43,12 @@ class SensorDates extends Component {
     }
 
     componentDidMount() {
-        this.getAllSensorDates();
+        if (localStorage.getItem("user-id") === null) {
+            this.props.history.push("/")
+        }else {
+            this.getAllSensorDates();
+        }
+
     }
 
     render() {

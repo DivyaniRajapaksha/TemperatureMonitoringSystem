@@ -31,7 +31,12 @@ class Sensors extends Component {
   }
 
   componentDidMount() {
-    this.getAllSensors();
+
+    if (localStorage.getItem("user-id") === null) {
+      this.props.history.push("/")
+    } else {
+      this.getAllSensors();
+    }
   }
 
   render() {

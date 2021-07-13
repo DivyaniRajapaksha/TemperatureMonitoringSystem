@@ -34,7 +34,11 @@ class Notification extends Component {
     }
 
     componentDidMount() {
-        this.getAllNotification();
+        if (localStorage.getItem("user-id") === null) {
+            this.props.history.push("/")
+        } else {
+            this.getAllNotification();
+        }
     }
 
 

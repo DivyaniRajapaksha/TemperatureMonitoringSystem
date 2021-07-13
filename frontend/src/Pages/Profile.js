@@ -66,9 +66,14 @@ export class Profile extends Component {
         console.log(err);
       });
   }
+  
 
   componentDidMount() {
-    this.getUser();
+    if (localStorage.getItem("user-id") === null) {
+      this.props.history.push("/")
+    }else {
+      this.getUser();
+    }
   }
 
   handleModal() {

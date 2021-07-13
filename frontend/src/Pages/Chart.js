@@ -2,8 +2,14 @@ import React, { Component, useState } from 'react';
 import constants from "../constants/constants";
 import axios from "axios";
 import LineChartContainer from "../components/Chart/LineChartContainer";
+import PropTypes from "prop-types";
 
 class Chart extends Component {
+    static propTypes = {
+        match: PropTypes.object.isRequired,
+        location: PropTypes.object.isRequired,
+        history: PropTypes.object.isRequired,
+    };
     constructor() {
         super();
         this.state = {
@@ -22,7 +28,12 @@ class Chart extends Component {
     }
 
     componentDidMount() {
-        this.setChartData();
+        if (localStorage.getItem("user-id") === null) {
+            this.props.history.push("/")
+        } else {
+            this.setChartData();
+        }
+        
     }
 
     async setChartData() {

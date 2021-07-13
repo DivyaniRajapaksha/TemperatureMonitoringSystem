@@ -11,7 +11,7 @@ import AddSensor from "./Pages/AddSensor";
 import Sensors from "./Pages/Sensors";
 import SensorDates from "./Pages/SensorDates";
 import Footer from "./components/Footer/Footer";
-
+import Notifications from "./Pages/Notification"
 function App() {
   return (
     <Router>
@@ -21,6 +21,7 @@ function App() {
         <Route path="/" exact component={Login} />
         <Route path="/signup" component={Signup} />
         <Route path="/profile" component={Profile} />
+        <Route path="/notifications" component={Notifications} />
         <Route path="/chart/:date" component={Chart} />
         <Route path="/addsensor" component={AddSensor} />
         <Route path="/sensors/" component={Sensors} />

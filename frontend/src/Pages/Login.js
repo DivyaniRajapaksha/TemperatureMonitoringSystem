@@ -41,8 +41,10 @@ const Login = (props) => {
         setUser(res.data);
       });
 
-    history.push("/profile");
-
+    window.location.href = "/profile";
+    //window.location.reload();
+    //history.push("/profile");
+    //window.location.reload();
     /* if (user === "Not a valid user" || !user) {
       setError("Invalid user!");
       console.log(typeof user);

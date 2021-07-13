@@ -44,6 +44,13 @@ class AddSensor extends Component {
     }
   }
 
+  componentDidMount() {
+    if (localStorage.getItem("user-id") === null) {
+      this.props.history.push("/")
+    }
+  }
+
+
   render() {
     return (
       <div className="App">

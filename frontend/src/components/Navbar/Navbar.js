@@ -22,6 +22,7 @@ const NavBar = () => {
   const profile = () => history.push("/profile");
   const sensors = () => history.push("/sensors");
   const login = () => history.push("/");
+  const notifications = () => history.push("/notifications");
   const logout = () => {
     history.push("/");
     localStorage.clear();
@@ -50,6 +51,7 @@ const NavBar = () => {
             <>
               <Nav.Link onClick={home} style={navbarFont}>Home</Nav.Link>
               <Nav.Link onClick={sensors} style={navbarFont}>Sensors</Nav.Link>
+              <Nav.Link onClick={notifications} style={navbarFont}>Notifications</Nav.Link>
               <Nav.Link onClick={profile} style={navbarFont}>Profile</Nav.Link>
               <Nav.Link onClick={logout} style={navbarFont}>Logout</Nav.Link>
             </>
