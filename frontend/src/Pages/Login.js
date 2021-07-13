@@ -9,7 +9,7 @@ import {
   Image,
   Alert,
 } from "react-bootstrap";
-import logo from "../img/logo.jpg";
+import logo from "../img/login.svg";
 import { Link, useHistory } from "react-router-dom";
 
 const Login = (props) => {

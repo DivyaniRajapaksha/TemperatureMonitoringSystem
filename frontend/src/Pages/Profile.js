@@ -3,7 +3,16 @@ import pic5 from "../img/back.jpg";
 import bg2 from "../img/bg2.jpg";
 
 import { Box, Grid, Paper, Typography, Button } from "@material-ui/core";
-import { Nav, form, Image, Col, Row, Container, Card } from "react-bootstrap";
+import {
+  Nav,
+  form,
+  Image,
+  Col,
+  Row,
+  Container,
+  Card,
+  Modal,
+} from "react-bootstrap";
 import Profilepic from "../components/ProfileCircle/ProfileCircle";
 import { Link } from "react-router-dom";
 import axios from "axios";
@@ -17,7 +26,6 @@ export class Profile extends Component {
     history: PropTypes.object.isRequired,
   };
 
-  //this.props.history.push("/")
   constructor() {
     super();
     this.state = {
@@ -41,14 +49,30 @@ export class Profile extends Component {
       });
   }
 
+  async deleteUser() {
+    var userId = localStorage.getItem("user-id");
+    axios
+      .delete(constants.backend_url + "/api/user/user/delete/" + userId)
+      .then((res) => {
+        console.log(res.data);
+        if (res.data) {
+          localStorage.setItem("user-id", "");
+          this.props.history.push("/");
+          window.location.reload();
+        }
+      })
+      .catch(function (err) {
+        console.log(err);
+      });
+  }
+
   componentDidMount() {
     this.getUser();
   }
 
-  // componentDidMount() {
-  //   this.getUser();
-  //   this.setState({ type: this.props.match.type });
-  // }
+  handleModal() {
+    this.setState({ show: !this.state.show });
+  }
 
   render() {
     return (
@@ -84,7 +108,6 @@ export class Profile extends Component {
               <Profilepic />
             </div>
           </div>
-          {/* <h1 className="text-center" style={{ marginTop: "-30px" }}></h1> */}
           <h3 className="text-center" style={{ marginTop: "-40px" }}>
             {this.state.values.firstName}
           </h3>
@@ -96,7 +119,43 @@ export class Profile extends Component {
           <br />
           <div className="text-center my-3">
             <Box display="flex" justifyContent="center">
-              <Button variant="contained">Delete Profile</Button>
+              <Button
+                variant="contained"
+                onClick={() => {
+                  this.handleModal();
+                }}
+              >
+                Delete Profile
+              </Button>
+              <Modal
+                id="one"
+                show={this.state.show}
+                onHide={() => this.handleModal()}
+              >
+                <Modal.Header>Message</Modal.Header>
+                <Modal.Body>
+                  <h6>Are you sure want to cancel your account?</h6>
+                </Modal.Body>
+                <Modal.Footer>
+                  <button
+                    onClick={() => {
+                      this.deleteUser();
+                    }}
+                    class="btn btn-primary"
+                  >
+                    Yes
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    onClick={() => {
+                      this.handleModal();
+                    }}
+                  >
+                    No
+                  </button>
+                </Modal.Footer>
+              </Modal>
             </Box>
           </div>
           <div class="row">

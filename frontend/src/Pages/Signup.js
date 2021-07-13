@@ -10,6 +10,7 @@ import {
   Alert,
 } from "react-bootstrap";
 import logo from "../img/signup.svg";
+import { Link, useHistory } from "react-router-dom";
 
 const Signup = (props) => {
   const [firstName, setFirstName] = useState("");
@@ -147,6 +148,9 @@ const Signup = (props) => {
               <Button size="lg" variant="dark" type="submit" className="w-100">
                 Sign Up
               </Button>
+              <Form.Group style={{ marginTop: "5%" }}>
+                Already have an account? <Link to="/">Login </Link>
+              </Form.Group>
             </Form>
           </Col>
         </Row>
