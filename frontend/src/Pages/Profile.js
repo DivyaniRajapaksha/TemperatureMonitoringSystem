@@ -57,6 +57,7 @@ export class Profile extends Component {
         console.log(res.data);
         if (res.data) {
           localStorage.setItem("user-id", "");
+          localStorage.clear();
           this.props.history.push("/");
           window.location.reload();
         }
