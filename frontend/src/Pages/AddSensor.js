@@ -38,6 +38,7 @@ class AddSensor extends Component {
         .then((res) => {
           console.log(res.data);
         });
+      this.props.history.push("/sensors")
     } catch (err) {
       this.setState({ error: "Error" });
     }
